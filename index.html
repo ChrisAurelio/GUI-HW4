@@ -1,0 +1,44 @@
+<!-- 
+GitHub: ChrisAurelio
+Name: Chris Aurelio
+Email: christopher_aurelio@student.uml.edu
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Adds title to the webpage -->
+  <title>Multiplication Table</title>
+  <!-- Linking CSS stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Page Header -->
+  <h1>Dynamic Multiplication Table</h1>
+  <!-- Colored display bar -->
+  <hr class="rounded">
+  <fieldset>
+    <!-- Form items for inputs -->
+    <form id="inputForm" method="get">
+      <label for="minColumn">Minimum Row Value</label><br>
+      <input type="number" id="minColumn" name="minColumn"><br><br>
+
+      <label for="maxColumn">Maximum Row Value</label><br>
+      <input type="number" id="maxColumn" name="maxColumn"><br><br>
+      
+      <label for="minRow">Minimum Column Value</label><br>
+      <input type="number" id="minRow" name="minRow"><br><br>
+
+      <label for="maxRow">Maximum Column Value</label><br>
+      <input type="number" id="maxRow" name="maxRow"><br><br>
+    </form>
+    <!-- Button that calls the generateTable function on click -->
+    <button id="generateButton">Generate Table</button>
+  </fieldset>
+  <div id="table"></div>
+  <!-- Linking JavaScript file -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+  <script src="js/function.js"></script>
+</body>
+</html>
